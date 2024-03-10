@@ -64,6 +64,13 @@ a{
 
 }
 
+#navbar  .menu{
+  display:none;
+  margin-left:3rem;
+  color:#fff;
+  font-size: 24px;
+}
+
 .home{
     padding-top: 14.75rem;
     padding-bottom: 17.5rem;
@@ -1070,32 +1077,39 @@ a{
     padding-bottom: 2rem;
   }
 
+  @media screen and (max-width:1400px){
+    .service-2-container .content-1-container .content{
+      padding:2.5rem;
+    }
+  }
+
   @media screen and (max-width:1300px) {
-     #home .text{
-      width: 55%;
-     }
 
-     #intro .container {
-      padding:0;
-     }
+    #home {
+      padding-top:10rem;
+      padding-bottom:12rem;
+    }
+    #intro {
+      margin: 4rem 0;
+    }
 
-     #projects .categories {
-      width:100%;
-     }
-     .service-2-container .content-1-container .content {
-      margin-left: 2.5rem;
-      margin-top: 2.5rem;
-      width: 80%;
-     }
+    #intro .container{
+      padding: 0 2%;
+    }
+    
+    #services,
+    #testimonials,
+    #projects,
+    #project-consultants{
+      padding: 4rem 2rem;
+    }
+    #callme .container{
+      padding: 1%;
+    }
      .service-2-container .img-container img{
       height: 100%;
      }
 
-     .service-2-container .content-2-container .content-container {
-      margin-top: 2.5rem;
-      margin-right: 2.5rem;
-      width: 80%;
-     }
      #contact .left{
        width: 56%;
      }
@@ -1107,22 +1121,50 @@ a{
     #home .text{
       width: 65%;
      }
+     .intro .container .first ,
+     .intro .container .second{
+      margin:0;
+     }
     #contact .left{
       width: 52%;
     }
     #contact .right{
      width: 46%;
    }
-   #intro,#services,#testimonials,#contact, footer,#about,#project-consultants,#callme,#projects{
-    padding-left: 5rem;
-    padding-right: 5rem;
-
+   .service .content {
+    padding:1rem;
+   }
+   #projects .categories{
+    width:80%;
+    
    }
   }
   @media screen and (max-width:1100px){
+
+    #home {
+      padding-top:6rem;
+      padding-bottom:7rem;
+    }
+
+    #intro .container .first {
+      padding: 0;
+    }
+
+    #cards .card {
+      padding-top:0;
+      padding-bottom:0;
+    }
     #projects .categories {
       width: 70%;
      }
+
+    #project-consultants{
+      padding:4rem 0;
+    }
+
+    #project-consultants .profiles {
+      padding: 0 2rem;
+    }
      .service-2-container .content-1-container .content {
       margin-left: 1.5rem;
       margin-top: 1.5rem;
@@ -1140,156 +1182,84 @@ a{
   .service-2-container .content-2-container .content-icon a{
     font-size: 1.25rem;
   }
-     nav{
-       padding-left: 6rem;
-       padding-right: 6rem;
-     }
   }
   @media screen and (max-width:1000px){
-    .wrapper{
-      overflow-y: hidden;
+
+    #home {
+      padding-top:3rem;
+      padding-bottom:3rem;
     }
-    #intro, #service, #testimonials, #contact, footer, #about, #project-consultants, #callme, #projects {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+    
     #home .text{
       width: 75%;
      }
-     .card .card-icon i {
-      left: 17.7%;
+     .service-2-container .img-container , .service-2-container .content-1-container , .service-2-container .content-2-container{
+      width: 50%;
+      height:50%;
      }
-     .service .content{
-      padding: 1.5rem;
+
+     #service-2 .service-2-container .content-1-container .content {
+      padding:0;
      }
-     .service-2-container .content-1-container .content p{
+
+     #service-2 .service-2-container .content-1-container .content p {
+      font-size: 1rem;
+      margin-bottom:.2rem;
+     }
+
+     #service-2 .service-2-container .content-2-container .content-container {
+      margin:1rem;
+     }
+
+     #service-2 .service-2-container .content-2-container .content-container .content-icon a {
+      margin:1rem;
       font-size: 1rem;
      }
-     #contact .icons a i{
-        transform: translate(-45%,-45%);
+
+     #service-2 .service-2-container .content-2-container .content-container .progress{
+      margin:0;
      }
-     nav {
-      padding-left: 3rem;
-      padding-right: 3rem;
+     
+     #callme .container .left,
+     #callme .container .right {
+      padding:2rem;
+     }
+     
   }
- 
-  }
+
   @media screen and (max-width:900px){
 
-    #intro, #service, #testimonials, #contact, footer, #about, #project-consultants, #callme, #projects {
-      padding-left: 2rem;
-      padding-right: 2rem;
+    #navbar .menu{
+      display:block;
     }
+
+    #navbar ul {
+      display:none;
+    }
+
     #home .text{
       width: 80%;
      }
 
-     nav {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-  }
-  .service-2-container .content-1-container .content {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    width: 90%;
-   }
-
-
-   .service-2-container .content-2-container .content-container {
-    margin-top: 1rem;
-    margin-right: 1rem;
-    width: 90%;
-   }
-   .section-wrapper {
-    justify-content: space-between;
-   }
-   #testimonials .section-wrapper {
-    grid-auto-columns: 35%;
-   }
-   #testimonials .section-heading, #project-consultants .section-heading {
-      width: 65%;
-   }
-   .about-wrapper .left-container {
-    width: 40%;
-   }
-   .about-wrapper .left-container  img{
-    height: 100%;
-   }
-   .about-wrapper .right-container {
-    width: 58%;
-   }
-  }
-  @media screen and (max-width:800px){
-    #home .text{
-      width: 100%;
+     #intro h2 ,
+     #cards h2
+     {
+      font-size:1rem;
+      margin-bottom:.5rem;
+      line-height: 1.2;
      }
-     #intro .container{
-      flex-direction: column;
+     
+     #intro p
+     {
+      font-size: 1rem;
+      line-height: 1.5;
      }
-     #intro .container .left-container , #intro .container .right-container{
-      width: 100%;
-      margin-bottom: 2rem;
+     #about .cell p {
+      font-size:.9rem;
+      margin-bottom:.5rem;
+      line-height: 1;
      }
-     .cards {
-      display: flex;
-      flex-direction: column;
-      padding-top: 0;
-      padding-bottom: 0;
-
+     #about .cell .number {
+        font-size: 1.5rem ;
      }
-     .card .card-icon i{
-      bottom: 10px;
-      left: 45px;
-     }
-     #service .section-heading {
-      text-align: center;
-      width: 100%;
-      margin: auto;
-     }
-     .section-wrapper {
-      flex-direction: column;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
-     }
-     .service{
-      width: 80%;
-      margin-bottom: 1.5rem;
-     }
-     .service-2-container {
-      flex-direction: column;
-    
-     }
-     .service-2-container .img-container , .service-2-container .content-1-container , .service-2-container .content-2-container{
-      width: 100%;
-     }
-     #intro, #service, #testimonials, #contact, footer, #about, #project-consultants, #callme, #projects {
-      padding-top: 1rem;
-      padding-bottom: 0.5rem;
-     }
-     #callme .container{
-      flex-direction: column;
-     }
-     #callme .container .left , #callme .container .right{
-      margin-bottom: 1rem;
-      width: 100%;
-     }
-     #projects .categories {
-      width: 90%;
-  }
-
-  .about-wrapper, #contact {
-    flex-direction: column;
-  }
-  #contact{
-    margin-bottom: 0;
-  }
-  .about-wrapper .left-container , .about-wrapper .right-container {
-    margin-bottom: 1.5rem;
-    width: 100%;
-  }
-  #contact .left , #contact .right{
-    width: 100%;
-    margin-bottom: 3rem;
-  }
   }
